@@ -1,6 +1,6 @@
 function love.load()
   love.window.setMode(900, 700)
-  love.graphics.setBackgroundColor(155, 214, 255)
+  love.graphics.setBackgroundColor(0.608, 0.839, 1)
 
   myWorld = love.physics.newWorld(0, 500, false)
   myWorld:setCallbacks(beginContact, endContact, preSolve, postSolve)
