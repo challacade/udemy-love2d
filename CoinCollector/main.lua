@@ -25,7 +25,7 @@ function love.load()
   saveData = {}
   saveData.bestTime = 999
 
-  if love.filesystem.exists("data.lua") then
+  if love.filesystem.getInfo("data.lua") then
     local data = love.filesystem.load("data.lua")
     data()
   end
