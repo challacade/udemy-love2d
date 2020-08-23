@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="40" height="12" tilewidth="64" tileheight="64" infinite="0" nextlayerid="6" nextobjectid="16">
+ <editorsettings>
+  <export target="level2.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="platformer" tilewidth="64" tileheight="64" tilecount="9" columns="3">
+  <image source="tileset.png" width="192" height="192"/>
+ </tileset>
+ <tileset firstgid="10" name="Flag" tilewidth="64" tileheight="64" tilecount="1" columns="1">
+  <image source="flag.png" width="64" height="64"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="40" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,3,
+0,0,7,8,8,8,8,8,8,8,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,9,0,0,4,5,5,5,5,6,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,8,9,0,0,0,0,0,0,0,4,5,5,5,5,6,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,2,2,2,3,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,6,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,5,6,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,6,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,5,6,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,6,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,5,6,0,0,0,0,0,0,0,0,0,0,0,0,4,5,5,5,5,6
+</data>
+ </layer>
+ <objectgroup id="4" name="Flag">
+  <object id="14" x="2368" y="256" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="5" name="Start">
+  <object id="15" x="448" y="256" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup id="2" name="Platforms">
+  <object id="8" x="128" y="384" width="640" height="64"/>
+  <object id="9" x="960" y="512" width="448" height="256"/>
+  <object id="10" x="1536" y="448" width="192" height="64"/>
+  <object id="11" x="1856" y="384" width="192" height="64"/>
+  <object id="12" x="2176" y="320" width="384" height="448"/>
+ </objectgroup>
+ <objectgroup id="3" name="Enemies">
+  <object id="13" x="1216" y="448" width="64" height="64"/>
+ </objectgroup>
+</map>
