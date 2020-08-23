@@ -52,7 +52,7 @@ function love.mousepressed( x, y, button, istouch, presses )
     if gameState == 2 then
         local mouseToTarget = distanceBetween(x, y, target.x, target.y)
         if mouseToTarget < target.radius then
-        	if button == 1 then
+            if button == 1 then
             	score = score + 1
             elseif button == 2 then
             	score = score + 2
